@@ -1169,8 +1169,8 @@ const updateDataset = async (env, Settings) => {
         localDNS: Settings?.get('localDNS') || '8.8.8.8',
         lengthMin: Settings?.get('fragmentLengthMin') || '100',
         lengthMax: Settings?.get('fragmentLengthMax') || '200',
-        intervalMin: Settings?.get('fragmentIntervalMin') || '5',
-        intervalMax: Settings?.get('fragmentIntervalMax') || '10',
+        intervalMin: Settings?.get('fragmentIntervalMin') || '10',
+        intervalMax: Settings?.get('fragmentIntervalMax') || '27',
         blockAds: Settings?.get('block-ads') || false,
         bypassIran: Settings?.get('bypass-iran') || false,
         cleanIPs: Settings?.get('cleanIPs')?.replaceAll(' ', '') || '',
@@ -1712,10 +1712,10 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('https://${hostName}/fragsub/${userID}#BPB Fragment', 'Fragment Subscription')" style="margin-bottom: 8px;">
+                            <button onclick="openQR('https://${hostName}/fragsub/${userID}#Fragment', 'Fragment Subscription')" style="margin-bottom: 8px;">
                                 QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button onclick="copyToClipboard('https://${hostName}/fragsub/${userID}#BPB Fragment', true)">
+                            <button onclick="copyToClipboard('https://${hostName}/fragsub/${userID}#Fragment', true)">
                                 Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
