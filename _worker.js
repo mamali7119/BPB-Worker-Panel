@@ -2349,7 +2349,7 @@ const xrayOutboundTemp =
             tcpNoDelay: true
         },
         tlsSettings: {
-            allowInsecure: false,
+            allowInsecure: true,
             fingerprint: "chrome",
             alpn: ["h2", "http/1.1"],
             serverName: ""
@@ -2621,7 +2621,7 @@ const singboxOutboundTemp = {
             "http/1.1"
         ],
         enabled: true,
-        insecure: false,
+        insecure: true,
         server_name: "",
         utls: {
             enabled: true,
